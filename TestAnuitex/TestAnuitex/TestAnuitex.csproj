@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4124F1B9-B8EA-490E-8C8E-1482E4CD71AE}</ProjectGuid>
+    <ProjectGuid>{C3555706-0D18-4D9B-9258-944F1088A38A}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>TestAnuitex</RootNamespace>
     <AssemblyName>TestAnuitex</AssemblyName>
@@ -44,21 +44,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\CompanyExtensions.cs" />
+    <Compile Include="Menus\BregaderMenu.cs" />
+    <Compile Include="Menus\EmployeeByTypeExecuteMenu.cs" />
+    <Compile Include="Menus\EmployeeTypeSelectMenu.cs" />
+    <Compile Include="Menus\MainMenu.cs" />
+    <Compile Include="Menus\ManagerMenu.cs" />
     <Compile Include="Menus\Menu.cs" />
+    <Compile Include="Menus\MenuWithExit.cs" />
+    <Compile Include="Menus\SubMenu.cs" />
+    <Compile Include="Menus\WorkerMenu.cs" />
     <Compile Include="Models\Brigadier.cs" />
     <Compile Include="Models\Company.cs" />
     <Compile Include="Models\Employee.cs" />
-    <Compile Include="Models\Manager.cs" />
     <Compile Include="Models\IWorker.cs" />
+    <Compile Include="Models\Manager.cs" />
+    <Compile Include="Models\Worker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\Worker.cs" />
+    <Compile Include="Util\ConsoleUtil.cs" />
+    <Compile Include="Util\ConvertUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Util\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
